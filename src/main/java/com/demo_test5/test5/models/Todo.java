@@ -15,8 +15,7 @@ public class Todo {
         return model;
     }
 
-
-    public Todo(){
+    public Todo() {
     }
 
     public Long getId() {

@@ -1,6 +1,5 @@
 package com.demo_test5.test5.entitys;
 
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -12,7 +11,7 @@ public class UserEntity {
     private String username;
     private String password;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user" )
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private List<TodoEntity> todos;
 
 

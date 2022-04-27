@@ -1,4 +1,3 @@
-
 package com.demo_test5.test5.services;
 
 import com.demo_test5.test5.entitys.UserEntity;
@@ -8,7 +7,6 @@ import com.demo_test5.test5.models.User;
 import com.demo_test5.test5.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 @Service
 public class UserService {

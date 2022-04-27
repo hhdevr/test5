@@ -1,7 +1,6 @@
 package com.demo_test5.test5.controllers;
 
 import com.demo_test5.test5.entitys.UserEntity;
-
 import com.demo_test5.test5.exceptions.UserAlreadyExistException;
 import com.demo_test5.test5.exceptions.UserNotFoundException;
 import com.demo_test5.test5.services.UserService;
@@ -13,18 +12,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/users")
 public class UserController {
 
+    //@TODO remove autowired
     @Autowired
     private UserService userService;
-
-
-//    @GetMapping
-//    public ResponseEntity getUsers() {
-//        try {
-//            return ResponseEntity.ok("Работает!");
-//        } catch (Exception e) {
-//            return ResponseEntity.badRequest().body("Поймали ошибку");
-//        }
-//    }
 
     @GetMapping
     public ResponseEntity getOneUser(@RequestParam Long id) {
@@ -59,3 +49,4 @@ public class UserController {
     }
 
 }
+//@TODO error handling on API level
